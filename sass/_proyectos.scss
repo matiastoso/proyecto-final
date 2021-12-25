@@ -1,0 +1,36 @@
+/* ----- proyectos ----- */
+#proyectos h2{
+    margin: 25px 0px;
+    text-align: center;
+}
+
+#proyectos .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#proyectos .contenedor .card {
+    width: 30%;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 8px 0px;
+}
+
+#proyectos button {
+    padding: 5px 10px;
+    border: 15px;
+    background: #2e5871;
+    box-shadow: 1px 1px 3px #333;
+    margin: 20px 0px;
+    margin-left: 82%;
+}
+
+#proyectos button a {
+    color: rgb(226, 221, 221);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}

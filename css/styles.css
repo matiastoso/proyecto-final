@@ -1,12 +1,4 @@
-/* colors */
-:root {
-  --color-primario: #222831;
-  --color-secundario: #2d4059;
-  --color-terciario: #ff5722;
-  --blanco: #eeeeee;
-}
-
-/* reset */
+/* ----- reset ----- */
 * {
   margin: 0px;
   padding: 0px;
@@ -14,7 +6,7 @@
   font-family: Helvetica;
 }
 
-/* header */
+/* ----- header ----- */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +17,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: var(--color-secundario);
+  background: #2d4059;
   height: 10vh;
 }
 
@@ -53,6 +45,7 @@
   border-radius: 8px;
 }
 
+/* ----- banner ----- */
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,13 +85,13 @@
 .boton-banner {
   padding: 5px 10px;
   border: 15px;
-  background: var(--color-terciario);
+  background: #ff5722;
   -webkit-box-shadow: 1px 1px 3px #333;
           box-shadow: 1px 1px 3px #333;
 }
 
 .boton-banner a {
-  color: #2e5871;
+  color: #2d4059;
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
@@ -112,7 +105,7 @@
   width: 360px;
 }
 
-/* servicios */
+/* ----- servicios ----- */
 #servicios {
   height: 600px;
 }
@@ -148,7 +141,7 @@
   width: 240px;
 }
 
-/* sobre-mi */
+/* ----- sobre-mi ----- */
 #sobre-mi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,7 +153,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 300px;
-  background: #2e5871;
+  background: #ff5722;
 }
 
 #sobre-mi p {
@@ -175,13 +168,14 @@
 .info button {
   padding: 5px 10px;
   border: 15px;
-  background: #e2dddd;
+  color: #eeeeee;
+  background: #2d4059;
   -webkit-box-shadow: 1px 1px 3px #333;
           box-shadow: 1px 1px 3px #333;
 }
 
 .info a {
-  color: #2e5871;
+  color: #ff5722;
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
@@ -192,7 +186,7 @@
   margin-right: 10%;
 }
 
-/* proyectos */
+/* ----- proyectos ----- */
 #proyectos h2 {
   margin: 25px 0px;
   text-align: center;
@@ -235,8 +229,9 @@
   font-size: 1rem;
 }
 
+/* ----- footer -----*/
 #footer {
-  background: #2e5871;
+  background: #222831;
   height: 60px;
   text-align: center;
   color: white;

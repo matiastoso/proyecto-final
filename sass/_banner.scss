@@ -1,0 +1,53 @@
+/* ----- banner ----- */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(rgba(27, 27, 27, 0.5), rgba(44, 42, 42, 0.3)), url("../images/body-background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.textos-banner {
+    margin-left: 5%;
+}
+
+.textos-banner span {
+    color: #ddd;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.textos-banner h1{
+    font-size: 4.4rem;
+}
+
+.textos-banner p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.boton-banner {
+    padding: 5px 10px;
+    border: 15px;
+    background: $color-terciario;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.boton-banner a{
+    color: $color-secundario;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.avatar {
+    margin-right: 5%;
+}
+
+.avatar img{
+    width: 360px;
+}

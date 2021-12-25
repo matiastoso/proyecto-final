@@ -1,0 +1,30 @@
+/* ----- servicios ----- */
+#servicios {
+    height: 600px;
+}
+
+#servicios h2 {
+    padding-top: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#servicios .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#servicios .contenedor .card {
+    width: 30%;
+    text-align: center;
+}
+
+#servicios .card h3 {
+    margin: 7px;
+}
+
+#servicios .contenedor .card img{
+    width: 240px;
+}
