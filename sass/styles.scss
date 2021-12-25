@@ -1,0 +1,217 @@
+/* colors */
+:root {
+    --color-primario: #222831;
+    --color-secundario: #2d4059;
+    --color-terciario: #ff5722;
+    --blanco: #eeeeee;
+}
+
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+/* header */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-secundario);
+    height: 10vh;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.nav {
+    margin-right: 5%;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0px 12px;
+}
+
+.nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.nav .contacto {
+    border: 3px solid #2e5871;
+    padding: 4px 7px;
+    border-radius: 8px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(rgba(27, 27, 27, 0.5), rgba(44, 42, 42, 0.3)), url("../images/body-background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.textos-banner {
+    margin-left: 5%;
+}
+
+.textos-banner span {
+    color: #ddd;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.textos-banner h1{
+    font-size: 4.4rem;
+}
+
+.textos-banner p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.boton-banner {
+    padding: 5px 10px;
+    border: 15px;
+    background: var(--color-terciario);
+    box-shadow: 1px 1px 3px #333;
+}
+
+.boton-banner a{
+    color: #2e5871;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.avatar {
+    margin-right: 5%;
+}
+
+.avatar img{
+    width: 360px;
+}
+
+/* servicios */
+#servicios {
+    height: 600px;
+}
+
+#servicios h2 {
+    padding-top: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#servicios .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#servicios .contenedor .card {
+    width: 30%;
+    text-align: center;
+}
+
+#servicios .card h3 {
+    margin: 7px;
+}
+
+#servicios .contenedor .card img{
+    width: 240px;
+}
+
+/* sobre-mi */
+#sobre-mi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    background: #2e5871;
+}
+
+#sobre-mi p {
+    margin: 20px 0px;
+}
+
+.info {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.info button{
+    padding: 5px 10px;
+    border: 15px;
+    background: rgb(226, 221, 221);
+    box-shadow: 1px 1px 3px #333;
+}
+
+.info a{
+    color: #2e5871;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.tecnologias {
+    width: 30%;
+    margin-right: 10%;
+}
+
+/* proyectos */
+#proyectos h2{
+    margin: 25px 0px;
+    text-align: center;
+}
+
+#proyectos .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#proyectos .contenedor .card {
+    width: 30%;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 8px 0px;
+}
+
+#proyectos button {
+    padding: 5px 10px;
+    border: 15px;
+    background: #2e5871;
+    box-shadow: 1px 1px 3px #333;
+    margin: 20px 0px;
+    margin-left: 82%;
+}
+
+#proyectos button a {
+    color: rgb(226, 221, 221);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#footer {
+    background: #2e5871;
+    height: 60px;
+    text-align: center;
+    color: white;
+    line-height: 60px;
+}
+
+#footer a {
+    color: gray;
+}
