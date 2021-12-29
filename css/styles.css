@@ -23,6 +23,23 @@
           box-shadow: 2px 3px 2px #cf3200;
 }
 
+.btn-primario, .sobre-mi__info__btn {
+  padding: 6px 14px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: none;
+  background: #2d4059;
+  -webkit-box-shadow: 2px 3px 2px #0b0f15;
+          box-shadow: 2px 3px 2px #0b0f15;
+  border-radius: 8px;
+}
+
+.btn-primario:hover, .sobre-mi__info__btn:hover {
+  background: #344a67;
+  -webkit-box-shadow: 2px 3px 2px #121923;
+          box-shadow: 2px 3px 2px #121923;
+}
+
 /* ----- header ----- */
 /* ----- menu ----- */
 .menu {
@@ -321,7 +338,7 @@
 }
 
 /* ----- sobre-mi ----- */
-#sobre-mi {
+.sobre-mi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,38 +348,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 3rem 0px;
   background: #ff5722;
 }
 
-#sobre-mi p {
+.sobre-mi__info {
+  text-align: center;
+  margin-left: 10%;
+  width: 40%;
+  min-width: 400px;
+}
+
+.sobre-mi__info p {
   margin: 20px 0px;
 }
 
-.info {
-  margin-left: 10%;
-  width: 30%;
-}
-
-.info button {
-  padding: 5px 10px;
-  border: 15px;
-  color: #eeeeee;
-  background: #2d4059;
-  -webkit-box-shadow: 1px 1px 3px #333;
-          box-shadow: 1px 1px 3px #333;
-}
-
-.info a {
-  color: #ff5722;
-  font-weight: bold;
+.sobre-mi__info__btn a {
   text-decoration: none;
-  font-size: 1rem;
+  color: #eeeeee;
 }
 
-.tecnologias {
+.sobre-mi__tecnologias {
   width: 30%;
-  margin-right: 10%;
+  margin: 1.5rem auto;
+}
+
+.sobre-mi__tecnologias h3 {
+  margin-bottom: 1rem;
 }
 
 /* ----- proyectos ----- */
