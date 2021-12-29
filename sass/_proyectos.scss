@@ -1,18 +1,27 @@
 /* ----- proyectos ----- */
+#proyectos {
+    position: relative;
+}
+
 #proyectos h2{
     margin: 25px 0px;
     text-align: center;
+    
 }
 
 #proyectos .contenedor {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
 }
 
 #proyectos .contenedor .card {
     width: 30%;
+    min-width: 300px;
     text-align: center;
+    margin: 1.4rem 1rem;
 }
 
 .card h3 {
@@ -20,12 +29,10 @@
 }
 
 #proyectos button {
-    padding: 5px 10px;
-    border: 15px;
-    background: #2e5871;
-    box-shadow: 1px 1px 3px #333;
-    margin: 20px 0px;
-    margin-left: 82%;
+    @extend .btn-primario;
+    position: absolute;
+    bottom: 21px;
+    right: 2rem;
 }
 
 #proyectos button a {

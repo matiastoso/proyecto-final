@@ -23,7 +23,7 @@
           box-shadow: 2px 3px 2px #cf3200;
 }
 
-.btn-primario, .sobre-mi__info__btn {
+.btn-primario, .sobre-mi__info__btn, #proyectos button {
   padding: 6px 14px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -34,7 +34,7 @@
   border-radius: 8px;
 }
 
-.btn-primario:hover, .sobre-mi__info__btn:hover {
+.btn-primario:hover, .sobre-mi__info__btn:hover, #proyectos button:hover {
   background: #344a67;
   -webkit-box-shadow: 2px 3px 2px #121923;
           box-shadow: 2px 3px 2px #121923;
@@ -386,6 +386,10 @@
 }
 
 /* ----- proyectos ----- */
+#proyectos {
+  position: relative;
+}
+
 #proyectos h2 {
   margin: 25px 0px;
   text-align: center;
@@ -395,16 +399,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
 
 #proyectos .contenedor .card {
   width: 30%;
+  min-width: 300px;
   text-align: center;
+  margin: 1.4rem 1rem;
 }
 
 .card h3 {
@@ -412,13 +422,9 @@
 }
 
 #proyectos button {
-  padding: 5px 10px;
-  border: 15px;
-  background: #2e5871;
-  -webkit-box-shadow: 1px 1px 3px #333;
-          box-shadow: 1px 1px 3px #333;
-  margin: 20px 0px;
-  margin-left: 82%;
+  position: absolute;
+  bottom: 21px;
+  right: 2rem;
 }
 
 #proyectos button a {
