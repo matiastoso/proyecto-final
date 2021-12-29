@@ -281,11 +281,11 @@
 
 /* ----- servicios ----- */
 #servicios {
-  height: 600px;
+  height: auto;
+  padding: 3rem 0px;
 }
 
 #servicios h2 {
-  padding-top: 35px;
   margin-bottom: 25px;
   text-align: center;
   font-weight: normal;
@@ -295,16 +295,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #servicios .contenedor .card {
   width: 30%;
+  min-width: 320px;
   text-align: center;
+  margin: 1.2rem .8rem;
 }
 
 #servicios .card h3 {

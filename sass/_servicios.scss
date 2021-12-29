@@ -1,10 +1,10 @@
 /* ----- servicios ----- */
 #servicios {
-    height: 600px;
+    height: auto;
+    padding: 3rem 0px;
 }
 
 #servicios h2 {
-    padding-top: 35px;
     margin-bottom: 25px;
     text-align: center;
     font-weight: normal;
@@ -12,13 +12,16 @@
 
 #servicios .contenedor {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #servicios .contenedor .card {
     width: 30%;
+    min-width: 320px;
     text-align: center;
+    margin: 1.2rem .8rem;
 }
 
 #servicios .card h3 {
