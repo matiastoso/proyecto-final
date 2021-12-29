@@ -449,4 +449,16 @@
 }
 
 /* ----- page-educacion -----*/
+.carrusel-estudios {
+  background: #ff5722;
+}
+
+.carrusel-estudios h1 {
+  color: #eeeeee;
+}
+
+.carousel-item img {
+  width: 60%;
+  margin: 0px auto;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estudios.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Estudios - Matias Toso</title>
 </head>
 <body>
+    <!-- header -->
     <header class="menu">
         <h2 class="menu__logo">Logo</h2>
 
@@ -18,38 +21,65 @@
         <nav class="nav" id="nav">
             <ul>
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="#servicios">Servicios</a>
+                    <a href="../index.html#servicios">Servicios</a>
                 </li>
                 <li class="nav__sobre-mi">
-                    <a href="#sobre-mi">Sobre mi</a>
+                    <a href="../index.html#sobre-mi">Sobre mi</a>
                     <ul>
                         <li>
-                            <a href="pages/estudios.html">Estudios</a>
+                            <a href="estudios.html">Estudios</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#proyectos">Proyectos</a>
+                    <a href="../index.html#proyectos">Proyectos</a>
                 </li>
                 <li>
-                    <a href="#blog">Blog</a>
+                    <a href="../index.html#blog">Blog</a>
                 </li>
                 <li class="nav__contacto">
-                    <a href="#contacto">Contacto</a>
+                    <a href="../index.html#contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- FOOTER -->
+    <!-- carousel -->
+    <section class="container-fluid py-5 carrusel-estudios">
+        <h1 class="text-center mb-4">Certificados obtenidos</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/HTML_certificate.jpg" class="d-block" alt="Certificado">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/ja-certificado.jpg" class="d-block" alt="Certificado">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/CSS_certificate.jpg" class="d-block" alt="Certificado">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- footer -->
     <footer id="footer">
         <p>Desarrollado por <a href="#">@matiastoso</a></p>
     </footer>
 
     <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
 </body>
 </html>
