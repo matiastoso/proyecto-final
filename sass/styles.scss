@@ -1,10 +1,14 @@
 // imports
 
-@import "reset";
-@import "variables";
-@import "components";
-@import "header";
-@import "servicios";
-@import "sobre-mi";
-@import "proyectos";
-@import "footer";
+/* ----- index ----- */
+@import "index/reset";
+@import "index/variables";
+@import "index/components";
+@import "index/header";
+@import "index/servicios";
+@import "index/sobre-mi";
+@import "index/proyectos";
+@import "index/footer";
+
+/* ----- page-educacion -----*/
+@import "educacion/educacion";

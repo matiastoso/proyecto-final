@@ -1,0 +1,220 @@
+/* ----- header ----- */
+
+/* ----- menu ----- */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $color-secundario;
+    min-height: 10vh;
+    
+    &__logo {
+        margin-left: 5%;
+        color: $blanco;
+    }
+
+    &__btn {
+        color: white;
+        display: none;
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+}
+
+
+.nav {
+    margin-right: 5%;
+
+    li {
+        display: inline-block;
+        margin: 0px 12px;
+
+        a {
+            color: $blanco;
+            cursor: pointer;
+            text-decoration: none;
+            transform: all .3s;
+
+            &:hover {
+                color: $color-terciario;
+            }
+        }
+        
+    }
+
+    &__sobre-mi {
+        position: relative;
+        transition: all .3s;
+
+        &:hover ul{
+            display: block;
+        }
+
+        ul{
+            height: 25px;
+            line-height: 25px;
+            background-color: $color-terciario;
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+            display: none;
+        }
+    }
+
+    &__contacto {
+        border: 3px solid $color-terciario;
+        border-radius: 8px;
+        padding: 4px 7px;
+        transition: all .3s;
+        
+        &:hover {
+            background: $color-terciario;
+        }
+        
+        a:hover {
+            color: $blanco !important;
+        }
+    }
+}
+
+/* ----- banner ----- */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/body-background.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+
+    &__texto {
+        margin-left: 5%;
+        color: $blanco;
+
+        span {
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 1px $color-primario;
+        }
+
+        h1 {
+            font-size: 4.4rem;
+            text-shadow: 2px 2px 1px $color-primario;
+        }
+
+        p {
+            font-size: 1.6rem;
+            letter-spacing: .1rem;
+            word-spacing: 2px;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 1px $color-primario;
+        }
+    }
+
+    &__btn {
+        @extend .btn-terciario;
+
+        a {
+            color: $blanco;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 1px $color-primario;
+        }
+    }
+    .avatar {
+        margin-right: 5%;
+    }
+    
+    .avatar img{
+        width: 360px;
+    }
+}
+
+/* animaciones */
+@keyframes nav-aparecer {
+    from {
+        transform: translateX(-100%);
+        opacity: .5;
+    } to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* ----- header - responsive -----*/
+@media (max-width: 880px) {
+    // ----- nav
+    .menu {
+        flex-wrap: wrap;
+
+        &__logo {
+            padding: 10px;
+        }
+
+        &__btn {
+            display: block;
+            margin-right: 5%;
+        }
+    }
+
+    .nav {
+        position: relative;
+        width: 100%;
+        display: none;
+        animation-name: nav-aparecer;
+        animation-duration: 1s;
+        justify-content: center;
+        align-items: flex-start;
+        margin-right: 0px;
+        z-index: 2;
+
+        > ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            
+            background-color: $color-terciario;
+            bottom: -60vh;
+            right: 0;
+            right: 0;
+            width: 100%;
+            height: 60vh;
+
+            li {
+                display: block;
+
+                a:hover {
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__sobre-mi ul{
+            background-color: $color-primario;
+            color: $blanco;
+        }
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    // ----- banner
+    .banner {
+        flex-direction: column;
+        padding: 3rem;
+
+        &__texto {
+            order: 2;
+            margin-top: 1.5rem;
+        }
+
+        .logo {
+            order: 1;
+        }
+    }
+}
