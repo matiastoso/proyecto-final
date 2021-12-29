@@ -381,6 +381,10 @@
   margin-bottom: 1rem;
 }
 
+.sobre-mi__tecnologias li {
+  margin: 5px 0px;
+}
+
 /* ----- proyectos ----- */
 #proyectos h2 {
   margin: 25px 0px;
