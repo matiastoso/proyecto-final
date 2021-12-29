@@ -6,7 +6,25 @@
   font-family: Helvetica;
 }
 
+.btn-terciario, .banner__btn {
+  padding: 6px 14px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: none;
+  background: #ff5722;
+  -webkit-box-shadow: 2px 3px 2px #bb2d00;
+          box-shadow: 2px 3px 2px #bb2d00;
+  border-radius: 8px;
+}
+
+.btn-terciario:hover, .banner__btn:hover {
+  background: #ff6736;
+  -webkit-box-shadow: 2px 3px 2px #cf3200;
+          box-shadow: 2px 3px 2px #cf3200;
+}
+
 /* ----- header ----- */
+/* ----- menu ----- */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,31 +36,76 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #2d4059;
-  height: 10vh;
+  min-height: 10vh;
 }
 
-.logo {
+.menu__logo {
   margin-left: 5%;
+  color: #eeeeee;
+}
+
+.menu__btn {
+  color: white;
+  display: none;
+  font-size: 2.2rem;
+  cursor: pointer;
 }
 
 .nav {
   margin-right: 5%;
 }
 
-.nav ul li {
+.nav li {
   display: inline-block;
   margin: 0px 12px;
 }
 
-.nav ul li a {
-  color: #ddd;
+.nav li a {
+  color: #eeeeee;
+  cursor: pointer;
   text-decoration: none;
+  -webkit-transform: all .3s;
+          transform: all .3s;
 }
 
-.nav .contacto {
-  border: 3px solid #2e5871;
-  padding: 4px 7px;
+.nav li a:hover {
+  color: #ff5722;
+}
+
+.nav__sobre-mi {
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav__sobre-mi:hover ul {
+  display: block;
+}
+
+.nav__sobre-mi ul {
+  height: 25px;
+  line-height: 25px;
+  background-color: #ff5722;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  display: none;
+}
+
+.nav__contacto {
+  border: 3px solid #ff5722;
   border-radius: 8px;
+  padding: 4px 7px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav__contacto:hover {
+  background: #ff5722;
+}
+
+.nav__contacto a:hover {
+  color: #eeeeee !important;
 }
 
 /* ----- banner ----- */
@@ -56,53 +119,164 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 27, 0.5)), to(rgba(44, 42, 42, 0.3))), url("../images/body-background.jpg");
-  background: linear-gradient(rgba(27, 27, 27, 0.5), rgba(44, 42, 42, 0.3)), url("../images/body-background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url("../images/body-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/body-background.jpg");
   background-position: center;
   background-size: cover;
-  height: 90vh;
+  min-height: 90vh;
 }
 
-.textos-banner {
+.banner__texto {
   margin-left: 5%;
+  color: #eeeeee;
 }
 
-.textos-banner span {
-  color: #ddd;
+.banner__texto span {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 1px #222831;
 }
 
-.textos-banner h1 {
+.banner__texto h1 {
   font-size: 4.4rem;
+  text-shadow: 2px 2px 1px #222831;
 }
 
-.textos-banner p {
-  font-size: 1rem;
+.banner__texto p {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  word-spacing: 2px;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 1px #222831;
 }
 
-.boton-banner {
-  padding: 5px 10px;
-  border: 15px;
-  background: #ff5722;
-  -webkit-box-shadow: 1px 1px 3px #333;
-          box-shadow: 1px 1px 3px #333;
-}
-
-.boton-banner a {
-  color: #2d4059;
-  font-weight: bold;
+.banner__btn a {
+  color: #eeeeee;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 1px #222831;
 }
 
-.avatar {
+.banner .avatar {
   margin-right: 5%;
 }
 
-.avatar img {
+.banner .avatar img {
   width: 360px;
+}
+
+/* animaciones */
+@-webkit-keyframes nav-aparecer {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: .5;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes nav-aparecer {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: .5;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* ----- header - responsive -----*/
+@media (max-width: 880px) {
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu__logo {
+    padding: 10px;
+  }
+  .menu__btn {
+    display: block;
+    margin-right: 5%;
+  }
+  .nav {
+    position: relative;
+    width: 100%;
+    display: none;
+    -webkit-animation-name: nav-aparecer;
+            animation-name: nav-aparecer;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 0px;
+    z-index: 2;
+  }
+  .nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: absolute;
+    background-color: #ff5722;
+    bottom: -60vh;
+    right: 0;
+    right: 0;
+    width: 100%;
+    height: 60vh;
+  }
+  .nav > ul li {
+    display: block;
+  }
+  .nav > ul li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  .nav__sobre-mi ul {
+    background-color: #222831;
+    color: #eeeeee;
+  }
+  .nav-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+  }
+  .banner__texto {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 1.5rem;
+  }
+  .banner .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 /* ----- servicios ----- */
