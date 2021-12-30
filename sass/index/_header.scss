@@ -1,15 +1,19 @@
 /* ----- header ----- */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/body-background.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0px 5%;
+}
 
 /* ----- menu ----- */
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: $color-secundario;
     min-height: 10vh;
     
     &__logo {
-        margin-left: 5%;
         color: $blanco;
     }
 
@@ -23,41 +27,41 @@
 
 
 .nav {
-    margin-right: 5%;
+    width: 40%;
 
-    li {
-        display: inline-block;
-        margin: 0px 12px;
-
-        a {
-            color: $blanco;
-            cursor: pointer;
-            text-decoration: none;
-            transform: all .3s;
-
-            &:hover {
-                color: $color-terciario;
-            }
-        }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
+    
+        li {
+            a {
+                color: $blanco;
+                cursor: pointer;
+                text-decoration: none;
+                transform: all .3s;
+    
+                &:hover {
+                    color: $color-terciario;
+                }
+            }
+            
+        }
     }
 
     &__sobre-mi {
         position: relative;
-        transition: all .3s;
 
-        &:hover ul{
-            display: block;
+        .sub-menu {
+            display: none;
+            // background: $color-terciario;
+            position: absolute;
+            padding-top: 5px;
         }
 
-        ul{
-            height: 25px;
-            line-height: 25px;
-            background-color: $color-terciario;
-            position: absolute;
-            left: 0;
-            bottom: -25px;
-            display: none;
+        &:hover .sub-menu {
+            display: block;
         }
     }
 
@@ -77,20 +81,17 @@
     }
 }
 
+
 /* ----- banner ----- */
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/body-background.jpg");
-    background-position: center;
-    background-size: cover;
     min-height: 90vh;
 
     &__texto {
-        margin-left: 5%;
         color: $blanco;
+        font-family: $helvetica;
 
         span {
             font-weight: 600;
@@ -121,12 +122,8 @@
             font-size: 1.1rem;
             text-shadow: 1px 1px 1px $color-primario;
         }
-    }
-    .avatar {
-        margin-right: 5%;
-    }
-    
-    .avatar img{
+
+    }.avatar img{
         width: 360px;
     }
 }
