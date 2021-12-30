@@ -16,15 +16,17 @@
 /* ----- menu ----- */
 .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; min-height: 10vh; }
 
-.menu__logo { color: #eeeeee; }
+.menu__logo { color: #eeeeee; font-size: 2.2rem; }
 
 .menu__btn { color: white; display: none; font-size: 2.2rem; cursor: pointer; }
 
-.nav { width: 40%; }
+.nav { width: 50%; }
 
 .nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.nav ul li a { color: #eeeeee; cursor: pointer; text-decoration: none; -webkit-transform: all .3s; transform: all .3s; }
+.nav ul li { list-style: none; }
+
+.nav ul li a { color: #eeeeee; cursor: pointer; text-decoration: none; -webkit-transform: all .3s; transform: all .3s; font-size: 1.2rem; }
 
 .nav ul li a:hover { color: #ff5722; }
 
