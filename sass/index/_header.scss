@@ -3,6 +3,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/body-background.jpg");
     background-position: center;
     background-size: cover;
+    user-select: none;
     padding: 0px 5%;
 }
 
@@ -19,16 +20,65 @@
     }
 
     &__btn {
-        color: white;
+        position: relative;
         display: none;
-        font-size: 2.2rem;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
         cursor: pointer;
+        transition: all .5s ease-in-out;
+
+        &__burger {
+            width: 45px;
+            height: 6px;
+            background: $blanco;
+            border-radius: 5px;
+            transition: all .5s ease-in-out;
+            box-shadow: 1px 1px 3px $color-primario;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                width: 45px;
+                height: 6px;
+                background: $blanco;
+                border-radius: 5px;
+                box-shadow: 2px 2px 1px $color-primario;
+            }
+
+            &::before {
+                transform: translateY(-16px);
+                transition: all .5s ease-in-out;
+            }
+
+            &::after {
+                transform: translateY(16px);
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+    
+    .open &__btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .open &__btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background: $color-terciario;
+    }
+
+    .open &__btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background: $color-terciario;
     }
 }
 
 
 .nav {
-    width: 50%;
+    width: 55%;
 
     ul {
         display: flex;
@@ -38,6 +88,7 @@
     
         li {
             list-style: none;
+            user-select: none;
 
             a {
                 color: $blanco;
@@ -84,7 +135,6 @@
         }
     }
 }
-
 
 /* ----- banner ----- */
 .banner {
@@ -149,14 +199,13 @@
     .menu {
         flex-wrap: wrap;
 
-        &__logo {
-            padding: 10px;
-        }
-
         &__btn {
-            display: block;
-            margin-right: 5%;
+            display: flex;
         }
+    }
+
+    .nav.nav-active {
+        display: flex;
     }
 
     .nav {
@@ -164,7 +213,8 @@
         width: 100%;
         display: none;
         animation-name: nav-aparecer;
-        animation-duration: 1s;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
         justify-content: center;
         align-items: flex-start;
         margin-right: 0px;
@@ -198,10 +248,6 @@
             background-color: $color-primario;
             color: $blanco;
         }
-    }
-
-    .nav-active {
-        display: flex;
     }
 
     // ----- banner
