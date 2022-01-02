@@ -72,26 +72,26 @@
 .banner .avatar img { width: 360px; }
 
 /* animaciones */
-@-webkit-keyframes nav-aparecer { from { -webkit-transform: translateX(-100%); transform: translateX(-100%);
+@-webkit-keyframes nav-aparecer { from { -webkit-transform: translateY(-90vh); transform: translateY(-90vh);
     opacity: .5; }
-  to { -webkit-transform: translateX(0px); transform: translateX(0px);
+  to { -webkit-transform: translateY(0px); transform: translateY(0px);
     opacity: 1; } }
-@keyframes nav-aparecer { from { -webkit-transform: translateX(-100%); transform: translateX(-100%);
+@keyframes nav-aparecer { from { -webkit-transform: translateY(-90vh); transform: translateY(-90vh);
     opacity: .5; }
-  to { -webkit-transform: translateX(0px); transform: translateX(0px);
+  to { -webkit-transform: translateY(0px); transform: translateY(0px);
     opacity: 1; } }
 
 /* ----- header - responsive -----*/
 @media (max-width: 880px) { .menu { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .menu__btn { display: -webkit-box; display: -ms-flexbox; display: flex; }
   .nav.nav-active { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .nav { position: relative; width: 100%; display: none; -webkit-animation-name: nav-aparecer; animation-name: nav-aparecer; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-right: 0px; z-index: 2; }
-  .nav > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; position: absolute; background-color: #ff5722; bottom: -60vh; right: 0; right: 0; width: 100%; height: 60vh; }
+  .nav { position: absolute; width: 100%; display: none; -webkit-animation-name: nav-aparecer; animation-name: nav-aparecer; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-right: 0px; left: 0; top: 10vh; right: 0; z-index: 2; }
+  .nav > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; position: absolute; background-color: #ff5722; bottom: -90vh; width: 100%; height: 90vh; }
   .nav > ul li { display: block; }
   .nav > ul li a:hover { color: white; text-decoration: underline; }
   .nav__sobre-mi ul { background-color: #222831; color: #eeeeee; }
   .banner { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 3rem; }
-  .banner__texto { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; margin-top: 1.5rem; }
+  .banner__texto { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; margin-top: 2rem; }
   .banner .logo { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; } }
 
 /* ----- servicios ----- */
