@@ -1,5 +1,8 @@
 /* ----- servicios ----- */
 #servicios {
+    background: $blanco;
+    font-family: $mulish;
+    color: $color-primario;
     height: auto;
     padding: 3rem 0px;
 }
@@ -8,6 +11,12 @@
     margin-bottom: 25px;
     text-align: center;
     font-weight: normal;
+    font-family: $helvetica;
+
+    span {
+        font-weight: bold;
+        color: $color-secundario;
+    }
 }
 
 #servicios .contenedor {
@@ -29,5 +38,6 @@
 }
 
 #servicios .contenedor .card img{
+    user-select: none;
     width: 240px;
 }

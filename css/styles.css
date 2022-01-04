@@ -95,9 +95,11 @@
   .banner .logo { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; } }
 
 /* ----- servicios ----- */
-#servicios { height: auto; padding: 3rem 0px; }
+#servicios { background: #eeeeee; font-family: "Mulish", sans-serif; color: #222831; height: auto; padding: 3rem 0px; }
 
-#servicios h2 { margin-bottom: 25px; text-align: center; font-weight: normal; }
+#servicios h2 { margin-bottom: 25px; text-align: center; font-weight: normal; font-family: Helvetica, Arial; }
+
+#servicios h2 span { font-weight: bold; color: #2d4059; }
 
 #servicios .contenedor { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -105,7 +107,7 @@
 
 #servicios .card h3 { margin: 7px; }
 
-#servicios .contenedor .card img { width: 240px; }
+#servicios .contenedor .card img { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 240px; }
 
 /* ----- sobre-mi ----- */
 .sobre-mi { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; padding: 3rem 0px; background: #ff5722; }
