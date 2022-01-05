@@ -9,7 +9,7 @@ navBtn.addEventListener('click', function() {
 
 // efecto escritura
 const typed  = new Typed('.typed', {
-    strings: ['tu negocio', 'hacer crecer tu marca', 'aumentar las ventas', 'exponer tu arte'],
+    strings: ['tu negocio', 'hacer crecer tu marca', 'aumentar tus ventas', 'exponer tu arte'],
     typeSpeed: 40,
     backSpeed: 50,
     backDelay: 1000,

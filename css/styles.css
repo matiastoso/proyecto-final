@@ -1,6 +1,6 @@
 /* ----- reset ----- */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
-* { margin: 0px; padding: 0px; scroll-behavior: smooth; font-family: Helvetica; }
+* { margin: 0px; padding: 0px; scroll-behavior: smooth; }
 
 .btn-terciario, .banner__btn { padding: 6px 14px; -webkit-transition: all .3s; transition: all .3s; border: none; background: #ff5722; -webkit-box-shadow: 2px 3px 2px #bb2d00; box-shadow: 2px 3px 2px #bb2d00; border-radius: 8px; }
 
@@ -40,7 +40,7 @@
 
 .nav ul li { list-style: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.nav ul li a { color: #eeeeee; cursor: pointer; text-decoration: none; -webkit-transform: all .3s; transform: all .3s; font-size: 1.2rem; }
+.nav ul li a { color: #eeeeee; cursor: pointer; text-decoration: none; -webkit-transform: all .3s; transform: all .3s; font-size: 1.2rem; font-family: "Mulish", sans-serif; }
 
 .nav ul li a:hover { color: #ff5722; }
 
@@ -95,19 +95,28 @@
   .banner .logo { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; } }
 
 /* ----- servicios ----- */
-#servicios { background: #eeeeee; font-family: "Mulish", sans-serif; color: #222831; height: auto; padding: 3rem 0px; }
+#servicios { font-family: "Mulish", sans-serif; color: #222831; height: auto; padding: 3rem 0px; }
 
-#servicios h2 { margin-bottom: 25px; text-align: center; font-weight: normal; font-family: Helvetica, Arial; }
+#servicios h2 { margin-bottom: 2rem; text-align: center; font-weight: normal; font-size: 1.6rem; font-family: Helvetica, Arial; }
 
-#servicios h2 span { font-weight: bold; color: #2d4059; }
+#servicios h2 span { font-weight: bold; color: #ff5722; }
 
-#servicios .contenedor { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+#servicios .contenedor { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); justify-items: center; row-gap: 1rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 95%; margin: 0px auto; }
 
-#servicios .contenedor .card { width: 30%; min-width: 320px; text-align: center; margin: 1.2rem .8rem; }
+#servicios .contenedor .card { text-align: center; margin: 0px .5rem; }
 
-#servicios .card h3 { margin: 7px; }
+#servicios .contenedor .card img { width: 300px; height: 310px; border-radius: 50%; }
 
-#servicios .contenedor .card img { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 240px; }
+#servicios .contenedor .card h3 { margin: .5rem; font-family: Helvetica, Arial; }
+
+/* ----- responsive -----*/
+@media (max-width: 975px) { #servicios .contenedor { -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); }
+  #servicios .contenedor .card { margin: .8rem; }
+  #servicios .contenedor .card .img { width: 340px; } }
+
+@media (max-width: 640px) { #servicios .contenedor { -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
+  #servicios .contenedor .card { margin: 1rem .8rem; }
+  #servicios .contenedor .card .img { width: 420px; } }
 
 /* ----- sobre-mi ----- */
 .sobre-mi { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; padding: 3rem 0px; background: #ff5722; }
