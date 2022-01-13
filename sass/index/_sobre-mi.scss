@@ -4,7 +4,6 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: start;
-    font-family: $mulish;
     padding: 3rem 0px;
     background: $color-secundario;
 
@@ -20,7 +19,8 @@
 
         p {
             margin: .6rem 0px;
-            word-spacing: 1px
+            word-spacing: 1px;
+            font-family: $mulish;
         }
 
         &__btn {
@@ -48,15 +48,18 @@
                 margin-bottom: 1.1rem;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
                 
-                p {
-                    font-weight: bold;
+                i {
+                    margin-right: 2.4rem;
+                    font-size: 2rem;
+                    text-shadow: 1px 1px 1px black;
                 }
                 
                 &__bar {
                     width: 190px;
                     height: 10px;
+                    box-shadow: 1px 1px 5px #222;
                     border-radius: 8px;
                     background: #ddd;
                     position: relative;
@@ -66,7 +69,7 @@
                         content: '';
                         position: absolute;
                         border-radius: 8px;
-                        left: -190px;
+                        left: -100%;
                         width: 190px;
                         height: 10px;
                         background: $color-terciario;
@@ -77,7 +80,7 @@
                         content: '';
                         position: absolute;
                         border-radius: 8px;
-                        left: -190px;
+                        left: -100%;
                         width: 190px;
                         height: 10px;
                         background: $color-terciario;
@@ -88,7 +91,7 @@
                         content: '';
                         position: absolute;
                         border-radius: 8px;
-                        left: -190px;
+                        left: -100%;
                         width: 190px;
                         height: 10px;
                         background: $color-terciario;
@@ -99,7 +102,7 @@
                         content: '';
                         position: absolute;
                         border-radius: 8px;
-                        left: -190px;
+                        left: -100%;
                         width: 190px;
                         height: 10px;
                         background: $color-terciario;
@@ -115,7 +118,7 @@
 // animacion
 @keyframes skills-bar-fill-90 {
     to {
-        transform: translateX(90%);
+        transform: translateX(85%);
     }
 }
 
@@ -134,5 +137,47 @@
 @keyframes skills-bar-fill-60 {
     to {
         transform: translateX(60%);
+    }
+}
+
+@each $tecnologias, $color in $colores-tecnologias {
+    .color-#{$tecnologias} {
+        color: $color;
+    }
+}
+
+/* ----- responsive ----- */
+@media (max-width: 1075px) {
+    .sobre-mi {
+        &__tecnologias {
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width: 915px) {
+    .sobre-mi {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+        &__info {
+            margin: 0px;
+            width: 90%;
+        }
+
+        &__tecnologias {
+            justify-self: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 615px) {
+    .skills__item__bar {
+        width: 170px;
+        
+        &::after {
+            width: 170PX;
+        }
     }
 }

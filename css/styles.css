@@ -119,13 +119,13 @@
   #servicios .contenedor .card .img { width: 420px; } }
 
 /* ----- sobre-mi ----- */
-.sobre-mi { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; justify-items: center; -webkit-box-align: start; -ms-flex-align: start; align-items: start; font-family: "Mulish", sans-serif; padding: 3rem 0px; background: #2d4059; }
+.sobre-mi { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; justify-items: center; -webkit-box-align: start; -ms-flex-align: start; align-items: start; padding: 3rem 0px; background: #2d4059; }
 
 .sobre-mi h2, .sobre-mi h3 { font-family: Helvetica, Arial; }
 
 .sobre-mi__info { text-align: center; margin-left: 10%; width: 40%; min-width: 400px; }
 
-.sobre-mi__info p { margin: .6rem 0px; word-spacing: 1px; }
+.sobre-mi__info p { margin: .6rem 0px; word-spacing: 1px; font-family: "Mulish", sans-serif; }
 
 .sobre-mi__info__btn a { text-decoration: none; color: #eeeeee; }
 
@@ -133,23 +133,23 @@
 
 .sobre-mi__tecnologias h3 { margin-bottom: 1rem; text-align: center; }
 
-.sobre-mi__tecnologias .skills__item { margin-bottom: 1.1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.sobre-mi__tecnologias .skills__item { margin-bottom: 1.1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.sobre-mi__tecnologias .skills__item p { font-weight: bold; }
+.sobre-mi__tecnologias .skills__item i { margin-right: 2.4rem; font-size: 2rem; text-shadow: 1px 1px 1px black; }
 
-.sobre-mi__tecnologias .skills__item__bar { width: 190px; height: 10px; border-radius: 8px; background: #ddd; position: relative; overflow: hidden; }
+.sobre-mi__tecnologias .skills__item__bar { width: 190px; height: 10px; -webkit-box-shadow: 1px 1px 5px #222; box-shadow: 1px 1px 5px #222; border-radius: 8px; background: #ddd; position: relative; overflow: hidden; }
 
-.sobre-mi__tecnologias .skills__item__bar--90::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-90 1.2s ease-in-out forwards; animation: skills-bar-fill-90 1.2s ease-in-out forwards; }
+.sobre-mi__tecnologias .skills__item__bar--90::after { content: ''; position: absolute; border-radius: 8px; left: -100%; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-90 1.2s ease-in-out forwards; animation: skills-bar-fill-90 1.2s ease-in-out forwards; }
 
-.sobre-mi__tecnologias .skills__item__bar--75::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-75 1.2s ease-in-out forwards; animation: skills-bar-fill-75 1.2s ease-in-out forwards; }
+.sobre-mi__tecnologias .skills__item__bar--75::after { content: ''; position: absolute; border-radius: 8px; left: -100%; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-75 1.2s ease-in-out forwards; animation: skills-bar-fill-75 1.2s ease-in-out forwards; }
 
-.sobre-mi__tecnologias .skills__item__bar--40::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-40 1.2s ease-in-out forwards; animation: skills-bar-fill-40 1.2s ease-in-out forwards; }
+.sobre-mi__tecnologias .skills__item__bar--40::after { content: ''; position: absolute; border-radius: 8px; left: -100%; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-40 1.2s ease-in-out forwards; animation: skills-bar-fill-40 1.2s ease-in-out forwards; }
 
-.sobre-mi__tecnologias .skills__item__bar--60::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-60 1.2s ease-in-out forwards; animation: skills-bar-fill-60 1.2s ease-in-out forwards; }
+.sobre-mi__tecnologias .skills__item__bar--60::after { content: ''; position: absolute; border-radius: 8px; left: -100%; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-60 1.2s ease-in-out forwards; animation: skills-bar-fill-60 1.2s ease-in-out forwards; }
 
-@-webkit-keyframes skills-bar-fill-90 { to { -webkit-transform: translateX(90%); transform: translateX(90%); } }
+@-webkit-keyframes skills-bar-fill-90 { to { -webkit-transform: translateX(85%); transform: translateX(85%); } }
 
-@keyframes skills-bar-fill-90 { to { -webkit-transform: translateX(90%); transform: translateX(90%); } }
+@keyframes skills-bar-fill-90 { to { -webkit-transform: translateX(85%); transform: translateX(85%); } }
 
 @-webkit-keyframes skills-bar-fill-75 { to { -webkit-transform: translateX(75%); transform: translateX(75%); } }
 
@@ -162,6 +162,24 @@
 @-webkit-keyframes skills-bar-fill-60 { to { -webkit-transform: translateX(60%); transform: translateX(60%); } }
 
 @keyframes skills-bar-fill-60 { to { -webkit-transform: translateX(60%); transform: translateX(60%); } }
+
+.color-html { color: #e96228; }
+
+.color-css { color: #0091d5; }
+
+.color-js { color: #efd81d; }
+
+.color-figma { color: #9d56f7; }
+
+/* ----- responsive ----- */
+@media (max-width: 1075px) { .sobre-mi__tecnologias { width: 65%; } }
+
+@media (max-width: 915px) { .sobre-mi { -ms-grid-columns: 1fr; grid-template-columns: 1fr; gap: 3rem; }
+  .sobre-mi__info { margin: 0px; width: 90%; }
+  .sobre-mi__tecnologias { -ms-grid-column-align: center; justify-self: center; width: 100%; } }
+
+@media (max-width: 615px) { .skills__item__bar { width: 170px; }
+  .skills__item__bar::after { width: 170PX; } }
 
 /* ----- proyectos ----- */
 #proyectos { position: relative; }
