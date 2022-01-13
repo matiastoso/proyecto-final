@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
 * { margin: 0px; padding: 0px; scroll-behavior: smooth; }
 
-.btn-terciario, .banner__btn { padding: 6px 14px; -webkit-transition: all .3s; transition: all .3s; border: none; background: #ff5722; -webkit-box-shadow: 2px 3px 2px #bb2d00; box-shadow: 2px 3px 2px #bb2d00; border-radius: 8px; }
+.btn-terciario, .banner__btn, .sobre-mi__info__btn { padding: 6px 14px; -webkit-transition: all .3s; transition: all .3s; border: none; background: #ff5722; -webkit-box-shadow: 2px 3px 2px #bb2d00; box-shadow: 2px 3px 2px #bb2d00; border-radius: 8px; }
 
-.btn-terciario:hover, .banner__btn:hover { background: #ff6736; -webkit-box-shadow: 2px 3px 2px #cf3200; box-shadow: 2px 3px 2px #cf3200; }
+.btn-terciario:hover, .banner__btn:hover, .sobre-mi__info__btn:hover { background: #ff6736; -webkit-box-shadow: 2px 3px 2px #cf3200; box-shadow: 2px 3px 2px #cf3200; }
 
-.btn-primario, .sobre-mi__info__btn, #proyectos button { padding: 6px 14px; -webkit-transition: all .3s; transition: all .3s; border: none; background: #2d4059; -webkit-box-shadow: 2px 3px 2px #0b0f15; box-shadow: 2px 3px 2px #0b0f15; border-radius: 8px; }
+.btn-primario, #proyectos button { padding: 6px 14px; -webkit-transition: all .3s; transition: all .3s; border: none; background: #2d4059; -webkit-box-shadow: 2px 3px 2px #0b0f15; box-shadow: 2px 3px 2px #0b0f15; border-radius: 8px; }
 
-.btn-primario:hover, .sobre-mi__info__btn:hover, #proyectos button:hover { background: #344a67; -webkit-box-shadow: 2px 3px 2px #121923; box-shadow: 2px 3px 2px #121923; }
+.btn-primario:hover, #proyectos button:hover { background: #344a67; -webkit-box-shadow: 2px 3px 2px #121923; box-shadow: 2px 3px 2px #121923; }
 
 /* ----- header ----- */
 .header { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url("../images/body-background.jpg"); background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/body-background.jpg"); background-position: center; background-size: cover; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; padding: 0px 5%; }
@@ -119,19 +119,49 @@
   #servicios .contenedor .card .img { width: 420px; } }
 
 /* ----- sobre-mi ----- */
-.sobre-mi { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; padding: 3rem 0px; background: #ff5722; }
+.sobre-mi { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; justify-items: center; -webkit-box-align: start; -ms-flex-align: start; align-items: start; font-family: "Mulish", sans-serif; padding: 3rem 0px; background: #2d4059; }
+
+.sobre-mi h2, .sobre-mi h3 { font-family: Helvetica, Arial; }
 
 .sobre-mi__info { text-align: center; margin-left: 10%; width: 40%; min-width: 400px; }
 
-.sobre-mi__info p { margin: 20px 0px; }
+.sobre-mi__info p { margin: .6rem 0px; word-spacing: 1px; }
 
 .sobre-mi__info__btn a { text-decoration: none; color: #eeeeee; }
 
-.sobre-mi__tecnologias { width: 30%; margin: 1.5rem auto; }
+.sobre-mi__tecnologias { -ms-grid-column-align: start; justify-self: start; width: 50%; letter-spacing: 1px; }
 
-.sobre-mi__tecnologias h3 { margin-bottom: 1rem; }
+.sobre-mi__tecnologias h3 { margin-bottom: 1rem; text-align: center; }
 
-.sobre-mi__tecnologias li { margin: 5px 0px; }
+.sobre-mi__tecnologias .skills__item { margin-bottom: 1.1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.sobre-mi__tecnologias .skills__item p { font-weight: bold; }
+
+.sobre-mi__tecnologias .skills__item__bar { width: 190px; height: 10px; border-radius: 8px; background: #ddd; position: relative; overflow: hidden; }
+
+.sobre-mi__tecnologias .skills__item__bar--90::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-90 1.2s ease-in-out forwards; animation: skills-bar-fill-90 1.2s ease-in-out forwards; }
+
+.sobre-mi__tecnologias .skills__item__bar--75::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-75 1.2s ease-in-out forwards; animation: skills-bar-fill-75 1.2s ease-in-out forwards; }
+
+.sobre-mi__tecnologias .skills__item__bar--40::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-40 1.2s ease-in-out forwards; animation: skills-bar-fill-40 1.2s ease-in-out forwards; }
+
+.sobre-mi__tecnologias .skills__item__bar--60::after { content: ''; position: absolute; border-radius: 8px; left: -190px; width: 190px; height: 10px; background: #ff5722; -webkit-animation: skills-bar-fill-60 1.2s ease-in-out forwards; animation: skills-bar-fill-60 1.2s ease-in-out forwards; }
+
+@-webkit-keyframes skills-bar-fill-90 { to { -webkit-transform: translateX(90%); transform: translateX(90%); } }
+
+@keyframes skills-bar-fill-90 { to { -webkit-transform: translateX(90%); transform: translateX(90%); } }
+
+@-webkit-keyframes skills-bar-fill-75 { to { -webkit-transform: translateX(75%); transform: translateX(75%); } }
+
+@keyframes skills-bar-fill-75 { to { -webkit-transform: translateX(75%); transform: translateX(75%); } }
+
+@-webkit-keyframes skills-bar-fill-40 { to { -webkit-transform: translateX(40%); transform: translateX(40%); } }
+
+@keyframes skills-bar-fill-40 { to { -webkit-transform: translateX(40%); transform: translateX(40%); } }
+
+@-webkit-keyframes skills-bar-fill-60 { to { -webkit-transform: translateX(60%); transform: translateX(60%); } }
+
+@keyframes skills-bar-fill-60 { to { -webkit-transform: translateX(60%); transform: translateX(60%); } }
 
 /* ----- proyectos ----- */
 #proyectos { position: relative; }
