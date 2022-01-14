@@ -9,6 +9,7 @@
     <!-- recursos y librerias -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -60,7 +61,7 @@
         </div>
 
         <div class="banner">
-            <div class="banner__texto">
+            <div class="banner__texto" data-aos="fade-left" data-aos-duration="600">
                 <span>Hola!</span>
                 <h1>Soy Matias Toso</h1>
                 <p>Freelancer UI/UX designer <br>
@@ -71,7 +72,7 @@
                 </button>
             </div>
 
-            <div class="avatar">
+            <div class="avatar" data-aos="fade-right" data-aos-duration="600">
                 <img src="./images/avatar.png" alt="Avatar">
             </div>
         </div>
@@ -83,21 +84,21 @@
             para <span class="typed"></span>?</h2>
         
         <section class="contenedor">
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <img src="images/servicios/imagen1.jpg" loading="lazy" alt="Diseño web">
                 <h3>Diseño web</h3>
 
                 <p>Diseño de su sitio web, teniendo en cuenta los estándares generales y sus gustos personales. El resultado es el diseño de una <strong>web genial</strong>, capaz de atraer a más y más clientes. Figma como software de diseño.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <img src="images/servicios/imagen2.jpg" loading="lazy" alt="Desarrollo web">
                 <h3>Desarrollo web</h3>
 
                 <p>Desarrollo responsive de su sitio web. En otras palabras, convierto lo genial de su diseño en algo <strong>funcional</strong> mediante el código, utilizando los lenguajes, frameworks y librerías más potentes del mercado.</p>
             </article>
 
-            <article class="card">
+            <article class="card" data-aos="fade-up">
                 <img src="images/servicios/imagen3.jpg" loading="lazy" alt="Diseño web">
                 <h3>Gestión</h3>
 
@@ -108,7 +109,7 @@
 
     <!-- SOBRE MI -->
     <section class="sobre-mi" id="sobre-mi">
-        <article class="sobre-mi__info">
+        <article class="sobre-mi__info" data-aos="flip-left">
             <h2>Sobre mi</h2>
 
             <p>Tengo 17 años y vivo en Argentina. LLevo más de un año y medio maquetando y diseñando páginas web, aprovechando cada oportunidad para aprender algo nuevo y mejorar mi código día a día.</p>
@@ -119,7 +120,7 @@
             </button>
         </article>
 
-        <article class="sobre-mi__tecnologias">
+        <article class="sobre-mi__tecnologias" data-aos="flip-right">
             <h3>Tecnologías</h3>
 
             <div class="skills">
@@ -151,7 +152,7 @@
         <h2>Proyectos</h2>
 
         <div class="proyectos__contenedor">
-            <article class="proyectos__contenedor__card">
+            <article class="proyectos__contenedor__card" data-aos="zoom-in">
                 <div class="proyectos__contenedor__card__img">
                     <img src="images/proyectos/error404.jpg" alt="Imagen del proyecto nº1">
                 </div>
@@ -163,7 +164,7 @@
                 </div>
             </article>
 
-            <article class="proyectos__contenedor__card">
+            <article class="proyectos__contenedor__card" data-aos="zoom-in">
                 <div class="proyectos__contenedor__card__img">
                     <img src="images/proyectos/modern-interior.jpg" alt="Imagen del proyecto nº2">
                 </div>
@@ -175,7 +176,7 @@
                 </div>
             </article>
 
-            <article class="proyectos__contenedor__card">
+            <article class="proyectos__contenedor__card" data-aos="zoom-in">
                 <div class="proyectos__contenedor__card__img">
                     <img src="images/proyectos/demo-testimonials-responsive-.jpg" alt="Imagen del proyecto nº3">
                 </div>
@@ -201,5 +202,11 @@
     <!-- javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
     <script src="js/index.js"></script>
+
+    <!-- animacion scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
