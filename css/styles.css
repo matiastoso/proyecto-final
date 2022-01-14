@@ -178,19 +178,21 @@
   .sobre-mi__info { margin: 0px; width: 90%; }
   .sobre-mi__tecnologias { -ms-grid-column-align: center; justify-self: center; width: 100%; } }
 
-@media (max-width: 615px) { .skills__item__bar { width: 170px; }
-  .skills__item__bar::after { width: 170PX; } }
+@media (max-width: 615px) { .skills__item__bar { width: 130px; }
+  .skills__item__bar::after { width: 130px; } }
 
 /* ----- proyectos ----- */
-#proyectos { position: relative; }
+.proyectos { position: relative; }
 
-#proyectos h2 { margin: 25px 0px; text-align: center; }
+.proyectos h2 { font-family: Helvetica, Arial; margin: 25px 0px; text-align: center; }
 
-#proyectos .contenedor { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 3rem; }
+.proyectos__contenedor { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 3rem; }
 
-#proyectos .contenedor .card { width: 30%; min-width: 300px; text-align: center; margin: 1.4rem 1rem; }
+.proyectos__contenedor__card { width: 30%; min-width: 300px; text-align: center; margin: 1.4rem 1rem; font-family: "Mulish", sans-serif; }
 
-.card h3 { margin: 8px 0px; }
+.proyectos__contenedor__card h3 { font-family: Helvetica, Arial; margin: 8px 0px; }
+
+.proyectos__contenedor__card img { width: 100%; }
 
 #proyectos button { position: absolute; bottom: 21px; right: 2rem; }
 
