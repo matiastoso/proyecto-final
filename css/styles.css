@@ -213,7 +213,15 @@
 
 #footer a { color: gray; }
 
-.carrusel-estudios { background: #ff5722; }
+.header-estudios { background: #2d4059; }
+
+.header-estudios .nav-estudios li { margin-left: 1rem; }
+
+.header-estudios .nav-estudios li a { font-size: 1rem; }
+
+.contenedor-estudios { background: #ff5722; }
+
+.contenedor-estudios .articulo-estudios { width: 80%; }
 
 .carrusel-estudios h1 { color: #eeeeee; }
 

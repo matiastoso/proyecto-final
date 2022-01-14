@@ -11,67 +11,80 @@
 </head>
 <body>
     <!-- header -->
-    <header class="menu">
-        <h2 class="menu__logo">Logo</h2>
+    <header class="header header-estudios">
+        <div class="menu">
+            <h2 class="menu__logo">Logo</h2>
 
-        <span class="material-icons menu__btn" id="navBtn">
-            menu
-        </span>
+            <div class="menu__btn">
+                <div class="menu__btn__burger"></div>
+            </div>
 
-        <nav class="nav" id="nav">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../index.html#servicios">Servicios</a>
-                </li>
-                <li class="nav__sobre-mi">
-                    <a href="../index.html#sobre-mi">Sobre mi</a>
-                    <ul>
-                        <li>
-                            <a href="estudios.html">Estudios</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../index.html#proyectos">Proyectos</a>
-                </li>
-                <li>
-                    <a href="../index.html#blog">Blog</a>
-                </li>
-                <li class="nav__contacto">
-                    <a href="../index.html#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="nav nav-estudios">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#servicios">Servicios</a>
+                    </li>
+                    <li class="nav__sobre-mi">
+                        <a href="../index.html#sobre-mi">Sobre mi</a>
+
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="estudios.html">Estudios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../index.html#proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav__contacto">
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- carousel -->
-    <section class="container-fluid py-5 carrusel-estudios">
-        <h1 class="text-center mb-4">Certificados obtenidos</h1>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../images/HTML_certificate.jpg" class="d-block" alt="Certificado">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/ja-certificado.jpg" class="d-block" alt="Certificado">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/CSS_certificate.jpg" class="d-block" alt="Certificado">
-              </div>
+
+    <main class="contenedor-estudios">
+        <section class="container-fluid py-5 carrusel-estudios">
+            <h1 class="text-center mb-4">Certificados obtenidos</h1>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/HTML_certificate.jpg" class="d-block" alt="Certificado">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/ja-certificado.jpg" class="d-block" alt="Certificado">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/CSS_certificate.jpg" class="d-block" alt="Certificado">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+
+            <article class="articulo-estudios text-center mx-auto mt-5 text-light">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos veniam nostrum nemo sint. Quo vitae, cupiditate perferendis odit nisi ipsum repellendus numquam commodi quae! Quos aut officiis delectus facilis!</p>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, qui officiis veniam cupiditate optio, amet mollitia sed quam provident eum fuga architecto, expedita facere? Amet dolores odio illum recusandae fuga?</p>
+            </article>
+        </section>
+    </main>
 
     <!-- footer -->
     <footer id="footer">

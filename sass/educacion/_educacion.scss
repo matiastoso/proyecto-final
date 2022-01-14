@@ -1,7 +1,27 @@
-// carousel
-.carrusel-estudios {
+// header
+.header-estudios {
+    background: $color-secundario;
+
+    .nav-estudios {
+
+        li {
+            margin-left: 1rem;
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.contenedor-estudios {
     background: $color-terciario;
 
+    .articulo-estudios {
+        width: 80%;
+    }
+}
+// carousel
+.carrusel-estudios {
     h1 {
         color: $blanco;
     }
