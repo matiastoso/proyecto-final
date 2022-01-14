@@ -12,6 +12,7 @@
     }
 
     &__info {
+        justify-self: center;
         text-align: center;
         margin-left: 10%;
         width: 40%;
@@ -34,7 +35,7 @@
     }
 
     &__tecnologias {
-        justify-self: start;
+        justify-self: center;
         width: 50%;
         letter-spacing: 1px;
         

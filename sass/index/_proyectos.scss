@@ -1,43 +1,80 @@
 /* ----- proyectos ----- */
-#proyectos {
+.proyectos {
     position: relative;
-}
 
-#proyectos h2{
-    margin: 25px 0px;
-    text-align: center;
+    h2{
+        font-family: $helvetica;
+        margin: 25px 0px;
+        text-align: center;
+        color: $color-secundario;
+    }
     
-}
+    &__contenedor {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+        
+        &__card {
+            width: 30%;
+            min-width: 300px;
+            text-align: center;
+            margin: 1.4rem 1rem;
+            font-family: $mulish;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 1px 1px 8px #888;
+            transition: all .5s;
+            
+            &:hover {
+                box-shadow: 2px 2px 8px #555;
 
-#proyectos .contenedor {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 3rem;
-}
+                h3 {
+                    color: $color-secundario;
+                }
+            }
 
-#proyectos .contenedor .card {
-    width: 30%;
-    min-width: 300px;
-    text-align: center;
-    margin: 1.4rem 1rem;
-}
+            img {
+                width: 100%
+            }
+            
+            &__body {
+                padding: 1.8rem 1.4rem;
 
-.card h3 {
-    margin: 8px 0px;
-}
+                h3 {
+                    transition: all .5s;
+                }
+    
+                p {
+                    color: $color-primario;
+                }
+                
+                a {
+                    @extend .btn-primario;
+                    margin: 0px auto;
+                    margin-top: .9rem;
+                    width: 110px
+                }
+            }
+        }
+    }
 
-#proyectos button {
-    @extend .btn-primario;
-    position: absolute;
-    bottom: 21px;
-    right: 2rem;
-}
+    &__btn-ver-mas {
+        @extend .btn-primario;
+        margin: 0px auto;
+        margin-top: .9rem;
+        width: auto;
+        padding: .5rem;
+        position: absolute;
+        bottom: 21px;
+        right: 2rem;
 
-#proyectos button a {
-    color: rgb(226, 221, 221);
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1rem;
+        a {
+            color: rgb(226, 221, 221);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
 }
